@@ -1,15 +1,14 @@
 import React from 'react';
 import { TabNavigator } from 'react-navigation';
-import { MaterialIcons } from '@expo/vector-icons';
+import { NavigationBarIcon } from '../components/Icons';
 import { ReminderScreen, SettingsScreen } from '../screens';
 
 export default TabNavigator({
   Reminder: {
     navigationOptions: {
       tabBarIcon: () => (
-        <MaterialIcons
+        <NavigationBarIcon
           name="event-note"
-          size="24"
         />
       ),
     },
@@ -18,9 +17,8 @@ export default TabNavigator({
   Settings: {
     navigationOptions: {
       tabBarIcon: () => (
-        <MaterialIcons
+        <NavigationBarIcon
           name="settings"
-          size="24"
         />
       ),
     },
