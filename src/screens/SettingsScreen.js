@@ -1,14 +1,30 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const SettingsScreen = () => {
-  return (
-    <View>
-      <Text>
-        SettingsScreen
-      </Text>
-    </View>
-  );
-};
+class SettingsScreen extends React.Component {
+  static navigationOptions = {
+    title: 'settings',
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>
+          SettingsScreen
+        </Text>
+      </View>
+    );
+  }
+}
+
+// const SettingsScreen = () => {
+//   return (
+//     <View>
+//       <Text>
+//         SettingsScreen
+//       </Text>
+//     </View>
+//   );
+// };
 
 export default SettingsScreen;

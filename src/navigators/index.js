@@ -1,22 +1,15 @@
 import React from 'react';
-import { TabNavigator } from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 import { NavigationBarIcon } from '../components/Icons';
 import { ReminderScreen, SettingsScreen } from '../screens';
 
-export default TabNavigator({
+export default StackNavigator({
   Reminder: {
-    navigationOptions: {
-      tabBarIcon: () => (
-        <NavigationBarIcon
-          name="event-note"
-        />
-      ),
-    },
     screen: ReminderScreen,
   },
   Settings: {
     navigationOptions: {
-      tabBarIcon: () => (
+      Header: () => (
         <NavigationBarIcon
           name="settings"
         />
